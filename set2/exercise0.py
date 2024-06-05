@@ -44,7 +44,7 @@ def add_5(a_number):
     except expressed in python, not english
     """
     # If you need to do any working steps, do them in here
-    the_answer = None # 👈 whenever you see the_answer = None, you need to change that to your actual answer
+    the_answer = a_number+5 # 👈 whenever you see the_answer = None, you need to change that to your actual answer
     return the_answer
 
 
@@ -53,7 +53,7 @@ def adder(a_number, another_number):
 
     Same as above, but with any two numbers.
     """
-    the_answer = None
+    the_answer = a_number+another_number
     return the_answer
 
 
@@ -68,7 +68,7 @@ def shout(a_string):
           they all do different things. You'll need to actually read the
           docs to find out which one you actually need.
     """
-    the_answer = None
+    the_answer = str.upper(a_string)
     return the_answer
 
 
@@ -81,8 +81,8 @@ def really_shout(a_string):
     that you've reused the function you already wrote.
     Look up how to 'concatinate' strings to make this happen.
     """
-    the_answer = None
-    return the_answer
+    the_answer = str.upper(a_string) + '!'
+    return the_answer 
 
 
 def shout_with_a_number(a_string, a_number):
@@ -97,7 +97,7 @@ def shout_with_a_number(a_string, a_number):
           challenge, see if you can make the test pass with at least two ways
           of doing the same job.
     """
-    the_answer = None
+    the_answer = shout(a_string) + " "+str(a_number)
     return the_answer
 
 
@@ -132,6 +132,7 @@ if __name__ == "__main__":
         minitest(really_shout, [""], "!")
         minitest(really_shout, ["!"], "!!")
         minitest(shout_with_a_number, ("hello", 42), "HELLO 42")
+        minitest(shout_with_a_number, ("french", 75), "FRENCH 75")
         print("p.s. see note above these results")
     except ModuleNotFoundError as e:
         print("⚠"*20, "\nWe're looking for a module that's missing. That's probably a problem that a tutor needs to figure out.\n")

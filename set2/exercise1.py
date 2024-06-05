@@ -15,18 +15,29 @@ what does it mean?
 import platform
 
 # I think this will print "hello! Let's get started" by calling the print function.
-print("hello! Let's get started")  # it printed "hello! Let's get started"
+print("hello! Let's get started")  
+# it printed "hello! Let's get started"
 
-some_words = ["what", "does", "this", "line", "do", "?"]
+# I think that this will print "what", "does", "this", "line", "do", "?"
+some_words = ["what", "does", "this", "line", "do", "?"] 
+# Establish some_words = "what", "does", "this", "line", "do", "?"] 
 
-for word in some_words:
+# I think this will print the word "word"
+for word in some_words: 
     print(word)
+# It wrote "what" "does" "this" "line" "do" "?"
 
-for x in some_words:
+# I think this will print the word "x"
+for x in some_words: 
+# It prints "what" "does" "this" "line" "do" "?"
+
+    # I think this will print "some" "words"
     print(x)
+# It didn't print anything 
+
 
 print(some_words)
-
+# it printed ['what', 'does', 'this', 'line', 'do', '?']
 if len(some_words) > 3:
     print("some_words contains more than 3 words")
 
@@ -38,6 +49,9 @@ def usefulFunction():
     https://docs.python.org/3/library/platform.html#platform.uname
     """
     print(platform.uname())
+    # usefulFunction() = print(platform.uname()), the usefulfunction is a shortcut of the printplatform function
 
 
+# run the function
 usefulFunction()
+# It prints out where this file ios running and my user desktop

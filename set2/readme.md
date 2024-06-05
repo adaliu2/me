@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Today we applied our knowledge of python and learnt new terms like float, string and integer. I completed Set 1 and 2 but Set 3 is challenging. I plan to work on it with the people on my table further but today was my first time actually using the terminal and doing these coding activities. I enjoyed the activity sets as I have never done anything that comes close to this or uses this method of thinking.
